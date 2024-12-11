@@ -32,10 +32,43 @@ a{
 
 h1{
   color: red;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  font-size: clamp(1.2rem, 5vw, 2rem);
   /* text-decoration: underline; */
 }
 
 h2 {
   margin-top: 2em;
   color: green;
+}
+
+button {
+  background-color: #FF1F00;
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .2em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth effects */
+}
+
+button:hover {
+  background-color: #B30700; /* Slightly darker shade on hover */
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #854000; /* Even darker shade on click */
+  transform: scale(0.95);
+}
+
+button:disabled {
+  background-color: #d6d6d6; /* Light gray for disabled state */
+  color: #808080;
+  cursor: not-allowed;
 }

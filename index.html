@@ -6,12 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manifest</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="main.js"></script>
 </head>
 
 <body>
-    <h1>Manifest</h1>
+    <h1>🎄 Night before CX-MAS 🎄</h1>
+    <div id="tree-container">
+        <div id="tree"></div>
+    </div>
+    <p>The Night before CX-MAS is an annual fundraising event put on by <a
+            href="https://www.instagram.com/southernwonders/" target="_blank" rel="noreferrer">Southern Wonders</a> that
+        takes place the <em>~night before cx-mas~</em>. This year, it will be a poker ride to benefit <a
+            href="https://raleighcommunitykickstand.org/" target="_blank" rel="noreferrer">Raleigh Community
+            Kickstand</a>.</p>
+    <p>What's a poker ride? For starters, it's not a race! It's more of a scavenger hunt. You will be given a manifest
+        with clues to locations. Once you figure out the clues, you will then chart a route from there to visit as many
+        locations as you think you can before the deadline. At each stop, you will draw one card from a deck. Your
+        goal will be to collect at least 5 cards for a full hand. At the deadline, we will play a single round of poker
+        and the winner will be the person with the best hand.</p>
+    <h2>Clues</h2>
     <div id="clue_container"></div>
+    <h2>Poker Hands</h2>
+    <ol>
+        <li><strong>Five of a Kind</strong>: Four cards of the same rank (e.g., 9, 9, 9, 9, 2).</li>
+        <li><strong>Royal Flush</strong>: A, K, Q, J, 10, all of the same suit.</li>
+        <li><strong>Straight Flush</strong>: Five consecutive cards of the same suit (e.g., 8, 9, 10, J, Q of hearts).
+        </li>
+        <li><strong>Four of a Kind</strong>: Four cards of the same rank (e.g., 9, 9, 9, 9, 2).</li>
+        <li><strong>Full House</strong>: Three of a kind combined with a pair (e.g., 7, 7, 7, 4, 4).</li>
+        <li><strong>Flush</strong>: Five cards of the same suit, not in sequence (e.g., 2, 5, 8, J, K of spades).</li>
+        <li><strong>Straight</strong>: Five consecutive cards of different suits (e.g., 4, 5, 6, 7, 8).</li>
+        <li><strong>Three of a Kind</strong>: Three cards of the same rank (e.g., Q, Q, Q, 5, 9).</li>
+        <li><strong>Two Pair</strong>: Two different pairs (e.g., 10, 10, 4, 4, 6).</li>
+        <li><strong>One Pair</strong>: Two cards of the same rank (e.g., A, A, 3, 8, J).</li>
+        <li><strong>High Card</strong>: When no other hand is made, the highest card wins (e.g., Ace high).</li>
+    </ol>
+    <h2>Tiebreaker</h2>
+    <p>If two or more players have the same winning type of hand, the player with the highest-ranking card in their hand
+        wins. If those are tied, the next highest card (kicker) is compared, continuing until a winner is determined. If
+        they are somehow completely tied, the winner will be whoever can guess the number of cable ends in a container.
+    </p>
+
+
+    <script src="treeAnimation.js"></script>
+    <script type="module" src="main.js"></script>
+
 </body>
 
 </html>

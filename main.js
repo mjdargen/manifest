@@ -1,7 +1,9 @@
 import clues from './clues.js';
-// let clues = []; // Global variable to hold parsed clues
 
-// // Function to parse CSV data
+// // Global variable to hold parsed clues
+// let clues = {};
+
+// // Function to parse CSV data and populate the clues variable
 // function parseCSV(csvText) {
 //     // Normalize line endings to '\n'
 //     csvText = csvText.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
@@ -9,98 +11,31 @@ import clues from './clues.js';
 
 //     const headers = rows.shift()?.split(','); // Extract the header row
 
-//     if (!headers) {
-//         console.error('CSV headers are undefined. Check your CSV file format.');
-//         return [];
-//     }
-
-//     // Convert rows into objects using the headers
-//     return rows.map((row, index) => {
-//         const obj = {};
-//         const values = row.split(',');
-
-//         headers.forEach((header, i) => {
-//             obj[header.trim()] = values[i]?.trim() || ''; // Assign values, default to an empty string if undefined
-//         });
-
-//         obj.id = index + 1; // Add a unique ID based on row number
-//         return obj;
-//     });
-// }
-
-
-// // Function to dynamically create and insert HTML
-// async function populateClues() {
-//     const clueContainer = document.getElementById('clue_container');
-
-//     if (!clueContainer) {
-//         console.error('Clue container not found!');
+//     if (!headers || headers.length < 3) {
+//         console.error('CSV headers are undefined or invalid. Ensure the file includes "clue", "answer", and "address" columns.');
 //         return;
 //     }
 
-//     try {
-//         // Fetch the CSV file
-//         const response = await fetch('clues.csv');
-//         const csvText = await response.text();
-//         clues = parseCSV(csvText); // Parse and store in the global variable
+//     // Map rows into the clues object
+//     rows.forEach((row, index) => {
+//         const values = row.split(',');
 
-//         // Loop through clues and create the HTML structure for each
-//         clues.forEach(({ id, clue, answer, address }) => {
-//             // Create a <p> element for the clue text
-//             const clueElement = document.createElement('p');
-//             clueElement.textContent = `${id}: ${clue}`;
+//         if (values.length < headers.length) {
+//             console.warn(`Skipping incomplete row at index ${index}: ${row}`);
+//             return;
+//         }
 
-//             // Create an <input> element for user input
-//             const inputElement = document.createElement('input');
-//             inputElement.type = 'text';
-//             inputElement.id = `clue${id}`;
+//         const clueId = index + 1; // Use row number as the unique ID
+//         clues[clueId] = {
+//             clue: values[headers.indexOf("clue")]?.trim() || '',
+//             answer: values[headers.indexOf("answer")]?.trim() || '',
+//             address: values[headers.indexOf("address")]?.trim() || ''
+//         };
+//     });
 
-//             // Pre-fill input if the answer is already correct
-//             const storedAnswer = localStorage.getItem(`clue${id}`);
-//             if (storedAnswer) {
-//                 inputElement.value = storedAnswer;
-//                 inputElement.disabled = true; // Prevent editing
-//             }
-
-//             // Create a <button> element
-//             const buttonElement = document.createElement('button');
-//             buttonElement.type = 'submit';
-//             buttonElement.textContent = 'Check';
-//             buttonElement.setAttribute('onclick', `submit(${id})`);
-
-//             // Disable button if already answered correctly
-//             if (storedAnswer) {
-//                 buttonElement.disabled = true;
-//             }
-
-//             // Create a <span> element to display the result
-//             const resultElement = document.createElement('span');
-//             resultElement.id = `result${id}`;
-//             resultElement.style.fontWeight = 'bold';
-
-//             // Create a <p> element for the address (hidden initially)
-//             const addressElement = document.createElement('p');
-//             addressElement.id = `address${id}`;
-//             addressElement.style.display = 'none'; // Hide by default
-
-//             // Display "Correct!" if answer is already stored
-//             if (storedAnswer) {
-//                 resultElement.textContent = 'Correct!';
-//                 resultElement.style.color = 'green';
-//                 addressElement.textContent = ${address};
-//             }
-
-//             // Append all created elements to the clueContainer
-//             clueContainer.appendChild(clueElement);
-//             clueContainer.appendChild(inputElement);
-//             clueContainer.appendChild(buttonElement);
-//             clueContainer.appendChild(resultElement);
-//             clueContainer.appendChild(addressElement);
-//         });
-//     } catch (error) {
-//         console.error('Error loading questions:', error);
-//     }
+//     console.log('Clues loaded from CSV:', clues);
 // }
+
 
 // Function to dynamically create and insert HTML
 function populateClues() {
@@ -164,10 +99,11 @@ function populateClues() {
 
             // Append all created elements to the clueContainer
             clueContainer.appendChild(clueElement);
+            clueContainer.appendChild(addressElement);
             clueContainer.appendChild(inputElement);
             clueContainer.appendChild(buttonElement);
             clueContainer.appendChild(resultElement);
-            clueContainer.appendChild(addressElement);
+            clueContainer.appendChild(document.createElement('hr'));
         }
     }
 }

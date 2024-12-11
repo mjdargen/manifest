@@ -1,13 +1,41 @@
-html {
-    font-family: 'JetBrains-Mono', 'Courier New', monospace;
+body {
+    font-family: 'Courier New', monospace;
     background-color: #000000;
     color: #FFFFFF;
-    font-size: 2.5vh;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
+
 h1,
 .center {
   text-align: center;
 }
+
 button {
-    /* display: block; */
+    margin: 10px;
+}
+
+#tree-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: clamp(.65rem, 1vw, 1rem);
+}
+
+#tree {
+  white-space: pre;
+}
+
+a{
+  color:gold;
+}
+
+h1{
+  color: red;
+  /* text-decoration: underline; */
+}
+
+h2 {
+  margin-top: 2em;
+  color: green;
 }

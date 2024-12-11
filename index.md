@@ -1,0 +1,2 @@
+- finish clues
+- don't load clues before 5:30pm

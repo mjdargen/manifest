@@ -1,6 +1,6 @@
 const clues = {
     1: {
-        clue: "Long before craft beer became popular in Raleigh, this venue on Hillsborough Street was the city’s one and only brew shop. Though it didn’t brew beer, it provided a stage for many young, local bands to perform.",
+        clue: "Long before craft beer became popular in Raleigh, this venue on Hillsborough Street was the city's one and only brew shop. Though it didn’t brew beer, it provided a stage for many young, local bands to perform.",
         answer: "The Brewery",
         address: "3009 Hillsborough Street"
     },

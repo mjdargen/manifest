@@ -50,7 +50,7 @@ button {
   font-family: 'Courier New', monospace;
   font-size: 1rem;
   font-weight: bold;
-  padding: .2em 1em;
+  padding: .2em 1.2em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -58,17 +58,17 @@ button {
 }
 
 button:hover {
-  background-color: #B30700; /* Slightly darker shade on hover */
+  background-color: #B30700;
   transform: scale(1.05);
 }
 
 button:active {
-  background-color: #854000; /* Even darker shade on click */
+  background-color: #854000;
   transform: scale(0.95);
 }
 
 button:disabled {
-  background-color: #d6d6d6; /* Light gray for disabled state */
+  background-color: #d6d6d6;
   color: #808080;
   cursor: not-allowed;
 }

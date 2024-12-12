@@ -13,6 +13,26 @@ const clues = {
         clue: "This venue was the only industrial and goth club in Downtown Raleigh. Founded in 1985, it attracted black-clad freaks and geeks who lined up for industrial dance nights featuring the sounds of Depeche Mode, Front 242, and even early Nine Inch Nails. Today, the building is slated for demolition. Just don’t let the smell of hot wieners distract you when you arrive.",
         answer: "The Fallout Shelter",
         address: "2 S. West Street"
+    },
+    4: {
+        clue: "Kings",
+        answer: "Kings",
+        address: "424 South McDowell Street"
+    },
+    5: {
+        clue: "The Village Underground",
+        answer: "The Village Underground",
+        address: "1930 Clark Ave"
+    },
+    6: {
+        clue: "Sadlack's",
+        answer: "The Fallout Shelter",
+        address: "2116 Hillsborough Street"
+    },
+    7: {
+        clue: "Kosher Hut?",
+        answer: "The Fallout Shelter",
+        address: "2 S. West Street"
     }
 };
 

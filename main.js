@@ -139,13 +139,8 @@ function clueSubmission (clueId) {
     const normalizedUserAnswer = normalize(userAnswer);
     const normalizedCorrectAnswer = normalize(correctAnswer);
 
-    // console.log("Normalized User Answer:", normalizedUserAnswer);
-    // console.log("Normalized Correct Answer:", normalizedCorrectAnswer);
-
-    const threshold = 0.85; // Adjust threshold for strictness
+    const threshold = 0.80; // Adjust threshold for strictness
     const similarityScore = similarity(normalizedUserAnswer, normalizedCorrectAnswer);
-
-    // console.log("Similarity Score:", similarityScore);
 
     const resultElement = document.getElementById(`result${clueId}`);
     if (similarityScore >= threshold) {

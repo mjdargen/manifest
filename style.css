@@ -72,3 +72,8 @@ button:disabled {
   color: #808080;
   cursor: not-allowed;
 }
+
+
+ol {
+  list-style-position: inside;
+}

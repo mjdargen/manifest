@@ -7,7 +7,7 @@ const clues = {
     2: {
         clue: "This venue was the loudest club in town for a long time, and not because it exclusively booked heavy metal bands, but because the acoustics were just awful. Today, it serves coffee and still books metal and goth bands under its new boney moniker.",
         answer: "The Maywood",
-        address: "658 Maywood Ave"
+        address: "658 Maywood Avenue"
     },
     3: {
         clue: "This venue was the only industrial and goth club in Downtown Raleigh. Founded in 1985, it attracted black-clad freaks and geeks who lined up for industrial dance nights featuring the sounds of Depeche Mode, Front 242, and even early Nine Inch Nails. Today, the building is slated for demolition. Just don’t let the smell of hot wieners distract you when you arrive.",

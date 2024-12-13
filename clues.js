@@ -10,7 +10,7 @@ const clues = {
         address: "658 Maywood Avenue"
     },
     3: {
-        clue: "This venue was the only industrial and goth club in Downtown Raleigh. Founded in 1985, it attracted black-clad freaks and geeks who lined up for industrial dance nights featuring the sounds of Depeche Mode, Front 242, and even early Nine Inch Nails. Today, the building is slated for demolition. Just don’t let the smell of hot wieners distract you when you arrive.",
+        clue: "This venue was the only industrial and goth club in Downtown Raleigh. Founded in 1985, it attracted black-clad freaks and geeks who lined up for industrial dance nights featuring the sounds of Depeche Mode, Front 242, and even early Nine Inch Nails. It then became home to a bar and nightclub that served hard candies out of a urinal. Today, the building is slated for demolition. Just don’t let the smell of hot wieners distract you when you arrive.",
         answer: "The Fallout Shelter",
         address: "2 S. West Street"
     },
@@ -25,12 +25,12 @@ const clues = {
         address: "1930 Clark Ave (parking deck under the library)"
     },
     6: {
-        clue: "Heroes never die. They just join forces with other establishments to continue slinging sammies and tunes. This never-sad sandwich shop/bar had live music and bingo and cast a longer shadow than the often red tower across the street.",
+        clue: "Heroes never die. They just join forces with other establishments to continue slinging sammies and tunes. This sandwich shop and bar had live music and cast a longer shadow than the often red tower across the street.",
         answer: "Sadlack's",
         address: "2116 Hillsborough Street (patio in front of Jubala)"
     },
     7: {
-        clue: "This house venue was a staple of the local scene and indie touring circuit from 2014 until 2017 when a bishop had it cleared. OR a small modest shelter where they might serve food in accordance with one of the other major Abrahamic religions.",
+        clue: "This house venue was a staple of the local scene and indie touring circuit from 2014 until 2017 when a bishop had it cleared. Named for a small, modest shelter that might adhere to Jewish dietary laws.",
         answer: "Kosher Hut",
         address: "ask a punk (jk it was 620 Price St, empty lot across from the top of the bumpy path up from western/pullen)"
     }

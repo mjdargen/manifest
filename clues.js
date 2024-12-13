@@ -15,24 +15,24 @@ const clues = {
         address: "2 S. West Street"
     },
     4: {
-        clue: "Kings",
+        clue: "No more royals! Except just this one that moved. A great place to see an eclectic array of touring act and local acts. Home to important cultural events like the Game Show, 7 stories, the Great Cover Up, and of course, our two favorite muppets.",
         answer: "Kings",
-        address: "424 South McDowell Street"
+        address: "424 South McDowell Street (empty lot next to Poole's)"
     },
     5: {
-        clue: "The Village Underground",
-        answer: "The Village Underground",
-        address: "1930 Clark Ave"
+        clue: "This subterranean space was a collection of venues with a long storied list of names that pulled into its station throughout the 70s and 80s. The Ramones, Dizzy Gillespie, Duke Ellington, Sonic Youth, Jimmy Buffett, Iggy Pop, Pat Benetar, Merle Haggard, and many more all traveled to this little village.",
+        answer: "Village Subway",
+        address: "1930 Clark Ave (parking deck under the library)"
     },
     6: {
-        clue: "Sadlack's",
-        answer: "The Fallout Shelter",
-        address: "2116 Hillsborough Street"
+        clue: "Heroes never die. They just join forces with other establishments to continue slinging sammies and tunes. This never-sad sandwich shop/bar had live music and bingo and cast a longer shadow than the often red tower across the street.",
+        answer: "Sadlack's",
+        address: "2116 Hillsborough Street (patio in front of Jubala)"
     },
     7: {
-        clue: "Kosher Hut?",
-        answer: "The Fallout Shelter",
-        address: "2 S. West Street"
+        clue: "This house venue was a staple of the local scene and indie touring circuit from 2014 until 2017 when a bishop had it cleared. OR a small modest shelter where they might serve food in accordance with one of the other major Abrahamic religions.",
+        answer: "Kosher Hut",
+        address: "ask a punk (jk it was 620 Price St, empty lot across from the top of the bumpy path up from western/pullen)"
     }
 };
 

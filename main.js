@@ -10,6 +10,11 @@ function populateClues() {
         return;
     }
 
+    const theme = document.createElement('p');
+    theme.textContent = 'The theme is defunct Raleigh music venue locations.';
+    clueContainer.appendChild(theme);
+    clueContainer.appendChild(document.createElement('hr'));
+
     // Loop through clues and create the HTML structure for each
     for (const key in clues) {
         if (clues.hasOwnProperty(key)) {
